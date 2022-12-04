@@ -1,0 +1,725 @@
+body {
+    margin: 0px;
+  }
+  
+  .header {
+    padding-top: 28px;
+    padding-bottom: 95px;
+    margin: 0px;
+    width: 100%;
+    position: relative;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index:0;
+    
+  }
+  
+  .header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index:-1;
+    }
+  
+  .logo {
+    width: 200px;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1154px;
+    align-items: center;
+  }
+  
+  .menu {
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+  
+  .menu_1 {
+    font-family: OpenSans, sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+  }
+  
+  .menu_li {
+    margin-right: 34px;
+  }
+  
+  .menu_li:last-child {
+   margin-right: 0px;
+  }
+  
+  @font-face {
+    font-family: OpenSans;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: OpenSans;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-style: normal;
+    font-weight: bold;
+  }
+    
+  
+  
+  .header__1 {
+    font-family: OpenSans, sans-serif;
+    font-size: 45px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+    line-height: 170%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .new_block_trend_header {
+    font-family: OpenSans, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .new_block_trend_header:after{
+    content:"";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    width: 66px;
+    height: 3px;
+    background: #e1d9bd;
+  }
+  
+
+  .new_blok_trend {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: OpenSans, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing: border-box;
+    
+  }
+
+  .trend_contanier {
+    width: 24.9%;
+    min-height: 320px;
+    box-sizing: border-box;
+    display: flex;
+    align-items:flex-end;
+    padding: 20px;
+
+  }
+
+
+  .conrent_trend {
+    font-size: 20px; 
+    color: #ffffff;
+    
+  }
+
+  .conrent_trend:hover {
+    color:  #b59f5b;
+  }
+
+  .trend_contanier_text {
+    border: 2px solid #b59f5b;
+    padding: 36px 30px;
+    
+  }
+
+  .trend_contanier_b1 {
+    background-image: url("images/trend1.jpg");
+    position: relative;
+    z-index:0;
+    
+  }
+  .trend_contanier_b2 {
+    background-image: url("images/trend2.jpg");
+    position: relative;
+    z-index:0;
+  }
+  .trend_contanier_b3 {
+    background-image: url("images/trend3.jpg");
+    position: relative;
+    z-index:0;
+  }
+  .trend_contanier_b4 {
+    background-image: url("images/trend4.jpg");
+    position: relative;
+    z-index:0;
+  }
+
+  .trend_contanier:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index:-1;
+    }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+  }
+
+  .travel_1 {
+    display: flex;
+    font-family: OpenSans, sans-serif;
+    margin-bottom: 56px;
+   }
+
+   .contanier { 
+    margin-left: 30px;
+    box-sizing: border-box;
+    display: block;
+    padding: 0px;
+  
+  }
+  
+  .image {
+    width: 381px;
+  }
+  
+  .subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b59f5b;
+    font-size: 14px;
+    padding-top: 0px;
+  }
+  
+  .ul_subtitle {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding-top: 0px;
+    padding-left: 0;
+    margin-top: 0;
+  }
+  
+  .li_contanier {
+   margin-right: 19px;
+   box-sizing: border-box;
+  }
+  
+  .li_contanier:last-child {
+    margin-right: 0px;
+  }
+  
+  .time_author {
+    margin-top: 0px;
+  }
+  .paragraph {
+    font-size: 15px; 
+  }
+  
+  .paragraph:first-of-type {
+    margin-top: 50px;
+  }
+  
+  .header__2 {
+    font-family: OpenSans, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0f0d0e;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 110%;
+    margin-top: 0px;
+  }
+  
+  .date {
+    color: #888888;
+    font-size: 12px;
+  }
+  
+  .author {
+    font-family: OpenSans, sans-serif;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 13px;
+  }
+     
+  
+  a {
+    text-decoration: none;
+  }
+
+  .colum {
+    width: 270px;
+    margin-left: 90px;
+    font-family: OpenSans, sans-serif;
+   
+  }
+
+  .new_post {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  
+  .new_post_imag {
+    width: 71px;
+  }
+  
+  .new_post_content_all {
+    box-sizing: border-box;
+    display: block;
+    margin-left: 19px;
+    padding: 0px;
+  }
+  
+  .new_post_cont {
+    font-family: OpenSans, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 110%;
+  }
+  
+    
+  .new_post_content {
+    color: #000000;
+  }
+  
+  
+  .search {
+    padding: 0px;
+    display: flex;
+    margin-top: 52px;
+    width: 100%;  
+  }
+  
+  .field {
+    box-sizing: border-box;
+    width: 223px;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 47px;
+    background-color: #f4f7f6;
+    border: none;
+  }
+  
+  .field:hover {
+    outline-color: #ffffff;
+    border: 2px solid #b59f5b;
+  }
+  
+  .field:focus {
+    outline-color: #ffffff;
+    border: 2px solid #b59f5b;
+            
+  }
+  
+  .button {
+     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+     background-repeat: no-repeat;
+     width: 47px;
+     height: 47px;
+     background-size: 16px;
+     background-position: center;
+     background-color: #b59f5b;
+     border: none;
+  }
+  
+  .button:hover {
+    
+    background-color: black;
+  }
+  
+  
+  .email {
+    display: inline-block;
+    width: 100%;
+    
+  }
+  
+  .email_text {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 45px;
+    background-color: #f4f7f6;
+    border: none;
+    margin-top: 0;
+  }
+  
+  .email_text:hover  {
+    outline-color: #ffffff;
+    border: 2px solid #b59f5b;
+  }
+  .email_text:focus  {
+    outline-color: #ffffff;
+    border: 2px solid #b59f5b;
+  }
+  
+  .email_buttom {
+    width: 100%;
+    height: 45px;
+    background-color: #b59f5b;
+    border: none;
+    font-family: OpenSans;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 18px;
+  }
+  
+  .email_buttom:hover {
+    background: black;
+  }
+  
+  .skrinrider {
+    font-size: 0px;
+    
+  }
+  
+  .tegi {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    font-family: OpenSans, sans-serif;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 15px;
+  }
+  
+  .tegi_1 {  
+    display: block;
+    padding: 8px 9px;
+    color: #000000;
+    
+  }
+  
+  .teg_li {
+    margin: 0px 7px 7px 0px;
+    border: 3px solid #f4f3f1;
+  }
+  
+  .tema {
+    box-sizing: border-box;
+    padding: 0px;
+    list-style-type: none; 
+  }
+  
+  .tema_1 {
+    font-family: OpenSans, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    box-sizing: border-box;   
+  }
+  
+  .tema_li {
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 0px;
+  }
+  
+  
+  .sup {
+    font-family: OpenSans, sans-serif;
+    color: #cabb92;
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+  }
+  
+  .aside_header {
+    font-family: OpenSans, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    
+      
+  }
+  
+  .aside_header:not(:first-child) {
+    margin-top: 40px;
+  }
+  
+  .aside_header:after{
+    content:"";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    width: 66px;
+    height: 3px;
+    background: #e1d9bd;
+  }
+
+  .new_block_nashi_izdelia {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+
+  .nashi_izdelia_contenier {
+    justify-content: space-between;
+    display: flex;
+    flex-grow: 1;
+  }
+
+
+  .nashi_izdelia {
+    max-width: 347px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nashi_izdelia_img {
+   display: flex;
+   justify-content: center;
+    margin-bottom: -30px;
+  }
+
+  .content_izdelia {
+    display: inline-block;
+    border: 2px solid #b59f5b;
+    padding: 48px 25px;
+    
+  }
+
+  .pokupka {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .new_cena {
+    font-family: OpenSans, sans-serif;
+    font-size: 20px; 
+    font-weight: bold;
+  }
+
+  .old_cena {
+    font-family: OpenSans, sans-serif;
+    font-size: 14px; 
+    font-weight: bold;
+    text-decoration: line-through;
+  }
+
+  .na_tovar {
+    color:#b59f5b;
+  }
+
+  .v_mart {
+    width: 138px;
+    height: 45px;
+    background-color: #b59f5b;
+    border: none;
+    font-family: OpenSans;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .v_mart:hover {
+    background: black;
+  }
+
+  .paragraph_izdelia {
+    font-family: OpenSans, sans-serif;
+    font-size: 15px; 
+  }
+  
+  .footer_icon {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f7f6;
+    padding: 30px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;  
+    
+  }
+  
+  .social_icon_li {
+    display: flex;
+    width: 18px;
+    margin-right: 26px;
+  }
+  
+  .social_icon_li:last-child {
+    margin-right: 0px;
+  }
+  
+  
+  .social_icon1 {
+     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
+     background-repeat: no-repeat;
+    width:100%;
+  
+  }
+  
+  .social_icon2 {
+     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg");
+     background-repeat: no-repeat;
+    width:100%;
+  }
+  
+  .social_icon3 {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+     background-repeat: no-repeat;
+     width:100%;  
+  }
+  
+  .social_icon{
+    color: #f4f7f6;
+    font-size: 0px;
+  }
+   
+  .Copyright {
+    padding-top: 70px;
+    padding-bottom: 42px;
+    color: #999999;
+    font-size: 12px;
+    font-family: OpenSans, sans-serif;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .tema_1:hover {
+    color: #b59f5b;
+  }
+  .tegi_1:hover {
+    color: #b59f5b;
+  }
+  .new_post_content:hover {
+    color: #b59f5b;
+  }
+    
+  .header__2:hover {
+    color: #b59f5b;
+  }
+  .subtitle:hover {
+    text-decoration: underline;
+  }
+  .menu_1:hover {
+    text-decoration: underline;
+  }
+
+  .nash_fidbek {
+    display: flex;
+    flex-direction: column;
+    padding: 54px 30px;
+    width: 388px;
+    font-family: OpenSans, sans-serif;
+    font-size: 13px;
+    border: 2px solid #f4f7f6;
+  }
+
+  .select_pkd {
+    width: 100%;
+    height: 46px;
+    background-color: #f4f7f6;
+  }
+
+.form_radio {
+  background-color: url(svg\form-empty-circle.svg);
+}
+
+  .text2 {
+    width: 100%;
+    min-height: 130px;
+    background-color: #f4f7f6;
+
+  }
+
+@media (max-width: 768px) {
+
+  .new_blok_trend {
+    flex-wrap: wrap;
+  }
+
+  .trend_contanier {
+    margin-top: 1px;
+    min-width: 49.9%;
+  }
+
+  .travel_1 {
+    flex-direction: column;
+  }
+
+  .nashi_izdelia_contenier {
+    flex-wrap: wrap;
+    min-width: 698px ;
+    justify-content: start;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .new_blok_trend {
+    flex-wrap: wrap;
+  }
+
+  .trend_contanier {
+    margin-top: 1px;
+    min-width: 100%;
+  }
+
+
+
+  .nashi_izdelia_contenier {
+    flex-wrap: wrap;
+    min-width: 330px ;
+    justify-content: start;
+    margin-left: 0px;
+  }
+
+}

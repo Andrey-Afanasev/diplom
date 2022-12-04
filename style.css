@@ -706,6 +706,8 @@ body {
 
   .header {
     flex-direction: column;
+    padding-top: 224px;
+    padding-bottom: 217px;
   }
 
   .navigation {
@@ -713,8 +715,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 270px;
-    padding-top: 224px;
-    padding-bottom: 217px;
+    
     
   }
 

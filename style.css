@@ -710,7 +710,6 @@ body {
   .header {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     padding-top: 224px;
     padding-bottom: 217px;
 
@@ -720,7 +719,7 @@ body {
   .navigation {
     display: flex;
     justify-content: center;
-    
+
     
   }
 
@@ -752,6 +751,7 @@ body {
   }
 
 .content {
+  display: flex;
   flex-direction: column;
   max-width: 330px;
 }

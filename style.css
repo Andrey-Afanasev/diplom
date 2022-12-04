@@ -506,6 +506,7 @@ body {
   .nashi_izdelia_contenier {
     justify-content: space-between;
     display: flex;
+    justify-content:  stretch;
     flex-grow: 1;
   }
 
@@ -523,7 +524,8 @@ body {
   }
 
   .content_izdelia {
-    display: inline-block;
+    display:inline-block;
+    
     border: 2px solid #b59f5b;
     padding: 48px 25px;
     
@@ -680,7 +682,7 @@ body {
 
   }
 
-@media (max-width: 768px) {
+@media (min-width: 361px) and (max-width: 768px) {
 
   .new_blok_trend {
     flex-wrap: wrap;
@@ -714,7 +716,6 @@ body {
   }
     
   
-
   .navigation {
     display: flex;
     justify-content: center;

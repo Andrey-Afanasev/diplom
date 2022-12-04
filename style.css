@@ -715,7 +715,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 270px;
+    max-width: 270px;
     
     
   }
@@ -723,7 +723,7 @@ body {
   .header__1 {
     font-size: 1.625rem;
     margin-top: 0px;
-    width: 270px;
+    max-width: 270px;
   }
 
   .menu {

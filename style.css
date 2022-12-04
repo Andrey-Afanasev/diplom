@@ -712,8 +712,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.625rem;
+    
     width: 270px;
+    
+  }
+
+  .header__1 {
+    font-size: 1.625rem;
   }
 
   .menu {

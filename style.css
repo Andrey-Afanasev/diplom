@@ -700,7 +700,7 @@ body {
   .nashi_izdelia_contenier {
     flex-wrap: wrap;
     min-width: 698px ;
-    justify-content: start;
+    justify-content: flex-start;
     margin-left: 0px;
   }
 }

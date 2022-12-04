@@ -715,9 +715,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 270px;
     
-    
+  }
+
+  .logo {
+    max-width: 270px;  
   }
 
   .header__1 {

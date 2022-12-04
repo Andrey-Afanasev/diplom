@@ -663,6 +663,9 @@ body {
     font-family: OpenSans, sans-serif;
     font-size: 13px;
     border: 2px solid #f4f7f6;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
   }
 
   .select_pkd {
@@ -671,9 +674,7 @@ body {
     background-color: #f4f7f6;
   }
 
-.form_radio {
-  background-color: url(svg\form-empty-circle.svg);
-}
+
 
   .text2 {
     width: 100%;

@@ -713,7 +713,9 @@ body {
     min-width: 100%;
   }
 
-
+.content {
+  flex-direction: column;
+}
 
   .nashi_izdelia_contenier {
     flex-wrap: wrap;

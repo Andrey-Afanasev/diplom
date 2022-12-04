@@ -721,6 +721,8 @@ body {
 
   .header__1 {
     font-size: 1.625rem;
+    margin-top: 0px;
+    width: 270px;
   }
 
   .menu {

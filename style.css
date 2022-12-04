@@ -712,8 +712,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     width: 270px;
+    padding-top: 224px;
+    padding-bottom: 217px;
     
   }
 

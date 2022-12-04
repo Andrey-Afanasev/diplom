@@ -704,6 +704,18 @@ body {
 
 @media (max-width: 360px) {
 
+  .header {
+    flex-direction: column;
+  }
+
+  .header__1 {
+    font-size: 1.625rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
   .new_blok_trend {
     flex-wrap: wrap;
   }

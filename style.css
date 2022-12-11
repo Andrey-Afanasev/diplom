@@ -526,6 +526,7 @@ body {
 
 
   .nashi_izdelia {
+    box-sizing: border-box;
     max-width: 347px;
    margin-left: auto;
    margin-right: auto;
@@ -550,6 +551,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 24px;
   }
 
   .new_cena {
@@ -807,8 +809,17 @@ body {
   }
 
 
-  .menu {
+  .menu_li {
     display: none;
+  }
+
+  .menu::before {
+    content: "";
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    padding: 3px;
+    width: 24px;
+    margin-left: 300px;
   }
 
   .header__1 {
@@ -827,15 +838,40 @@ body {
 
   .travel_1 {
     flex-direction: column;
+    border-bottom: 2px solid #afabab;
+    margin-left: 35px;
+  }
+
+  .paragraph {
+    margin-bottom: 23px;
+  }
+
+  .contanier {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    max-width: 385px;
+  }
+
+  .colum {
+    margin-right: 35px;
+    margin-left: 35px;
   }
 
   .nashi_izdelia_contenier {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    min-width: 698px ;
-    justify-content: space-between;
-    margin-left: 0px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    min-width: 700px ;
+    margin-left: 35px;
+    margin-right: 35px;
     margin-top: 25px;
+  }
+
+
+  .nashi_izdelia {
+    margin-top: 23px;
   }
 }
 
@@ -846,7 +882,7 @@ body {
   .header {
     display: flex;
     flex-direction: column;
-    padding-top: 224px;
+    padding-top: 30px;
     padding-bottom: 217px;
     max-width: 100%;
     background-image: url("images/banner-mobile.jpg");
@@ -856,11 +892,15 @@ body {
   
   .navigation {
     display: flex;
-    justify-content: center;
-    width: 100%; 
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
   }
 
   .logo {
+    margin-top: 165px;
     min-width: 270px;  
   }
 
@@ -870,8 +910,17 @@ body {
     max-width: 280px;
   }
 
-  .menu {
+  .menu_li {
     display: none;
+  }
+
+  .menu::before {
+    content: "";
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    padding: 3px;
+    width: 24px;
+    margin-left: 300px;
   }
 
   .new_block_trend_header {
@@ -894,11 +943,27 @@ body {
   }
 
   .travel_1 {
+    margin-top: 28px;
     flex-direction: column;
+    border-bottom: 2px solid #afabab;
   }
 
   .conrent_trend {
     font-size: 1rem;
+  }
+
+  .paragraph {
+    margin-bottom: 23px;
+  }
+
+  .paragraph:first-of-type {
+    margin-top: 17px;
+  }
+  
+  .contanier {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
   }
 
  .content {
@@ -907,9 +972,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 330px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-top: 45px;
+  
   }
 
   .paragraph {

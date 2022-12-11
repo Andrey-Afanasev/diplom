@@ -8,9 +8,10 @@ body {
     margin: 0px;
     width: 100%;
     position: relative;
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-image: url("images/banner-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     z-index:0;
     
   }
@@ -100,6 +101,7 @@ body {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 64px;
   }
 
   .new_block_trend_header:after{
@@ -155,22 +157,34 @@ body {
   .trend_contanier_b1 {
     background-image: url("images/trend1.jpg");
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     z-index:0;
     
   }
   .trend_contanier_b2 {
     background-image: url("images/trend2.jpg");
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     z-index:0;
   }
   .trend_contanier_b3 {
     background-image: url("images/trend3.jpg");
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     z-index:0;
   }
   .trend_contanier_b4 {
     background-image: url("images/trend4.jpg");
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     z-index:0;
   }
 
@@ -504,17 +518,17 @@ body {
   }
 
   .nashi_izdelia_contenier {
-    justify-content: space-between;
     display: flex;
-    justify-content:  stretch;
-    flex-grow: 1;
+    justify-content: space-between;
+    align-items:  stretch;
+    
   }
 
 
   .nashi_izdelia {
     max-width: 347px;
-    margin-left: auto;
-    margin-right: auto;
+   margin-left: auto;
+   margin-right: auto;
   }
 
   .nashi_izdelia_img {
@@ -524,11 +538,12 @@ body {
   }
 
   .content_izdelia {
-    display:inline-block;
-    
+    display: inline-block;
     border: 2px solid #b59f5b;
-    padding: 48px 25px;
-    
+    padding-top: 48px ;
+    padding-left: 25px;
+    padding-right: 25px;
+  
   }
 
   .pokupka {
@@ -655,11 +670,36 @@ body {
     text-decoration: underline;
   }
 
+  .popup {
+    max-width: 390px;
+    position: absolute;
+    left: calc(50% - 190px);
+    top: calc(50% - 315px);
+    background: #eeeeee;
+    z-index: 2;
+    display: none;
+    
+  }
+
+  body:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index:1;
+  }
+
+
+
   .nash_fidbek {
-    display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     padding: 54px 30px;
-    width: 388px;
+    width: 390px;
     font-family: OpenSans, sans-serif;
     font-size: 13px;
     border: 2px solid #f4f7f6;
@@ -668,10 +708,85 @@ body {
     align-items: center;
   }
 
+  .krest_popup {
+    margin-left: 340px;
+  }
+
+  .krest_popup:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    background: url("svg/form-x.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border: none;
+  }
+
+   .select-label {
+    margin-top: 28px;
+    margin-bottom: 9px;
+   }
+
+   .vopros {
+    margin-top: 36px;
+    margin-bottom: 10px;
+   }
+
   .select_pkd {
     width: 100%;
     height: 46px;
     background-color: #f4f7f6;
+    appearance: none;
+    background-image: url("svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: right 11px center;
+    border: none;
+    padding-left: 11px;
+ 
+  }
+
+  .form_radio1 {
+    display: none;
+  }
+
+  .radio_text {
+    display: inline-block;
+    margin-right: 32px;
+  }
+
+  .radio_text:before {
+    width: 25px;
+    height: 25px;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background: url("svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center center;
+    margin-right: 8px;
+   
+  }
+
+  .form_radio1:checked + .radio_text:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    background: url("svg/form-circle.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    
+  }
+
+  .text1 {
+    margin-top: 32px;
+    margin-bottom: 10px;
   }
 
 
@@ -680,10 +795,36 @@ body {
     width: 100%;
     min-height: 130px;
     background-color: #f4f7f6;
-
+    appearance: none;
+    
   }
 
 @media (min-width: 361px) and (max-width: 768px) {
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 91%; 
+  }
+
+  .header {
+    max-width: 100vw;
+    background-image: url("images/banner-bg-tablet.jpg");
+  }
+
+  .logo {
+    max-width: 20.2%;  
+  }
+
+
+  .menu {
+    display: none;
+  }
+
+  .header__1 {
+    font-size: 40px;
+    width: 82%;
+  }
 
   .new_blok_trend {
     flex-wrap: wrap;
@@ -699,20 +840,26 @@ body {
   }
 
   .nashi_izdelia_contenier {
+    display: flex;
     flex-wrap: wrap;
     min-width: 698px ;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-left: 0px;
+    margin-top: 25px;
   }
 }
 
 @media (max-width: 360px) {
 
+
+ 
   .header {
     display: flex;
     flex-direction: column;
     padding-top: 224px;
     padding-bottom: 217px;
+    max-width: 100%;
+    background-image: url("images/banner-mobile.jpg");
 
   }
     
@@ -720,8 +867,7 @@ body {
   .navigation {
     display: flex;
     justify-content: center;
-
-    
+    width: 100%; 
   }
 
   .logo {
@@ -731,20 +877,30 @@ body {
   .header__1 {
     font-size: 1.625rem;
     margin-top: 0px;
-    max-width: 260px;
+    max-width: 280px;
   }
 
   .menu {
     display: none;
   }
 
+  .new_block_trend_header {
+    margin-top: 44px;
+  }
+
   .new_blok_trend {
     flex-wrap: wrap;
   }
 
+
   .trend_contanier {
     margin-top: 1px;
     min-width: 100%;
+  }
+
+
+  .image {
+    max-width: 330px;
   }
 
   .travel_1 {
@@ -755,17 +911,40 @@ body {
     font-size: 1rem;
   }
 
-.content {
+ .content {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  max-width: 330px;
-}
+  align-items: center;
+  width: 330px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 45px;
+  }
+
+  .paragraph {
+    margin-top: 14px;
+
+  }
+
+  .colum {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+
 
   .nashi_izdelia_contenier {
     flex-wrap: wrap;
     min-width: 330px ;
     justify-content: start;
     margin-left: 0px;
+    
+  }
+
+  .nashi_izdelia {
+    margin-top: 23px;
   }
 
 }

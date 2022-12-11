@@ -68,7 +68,7 @@
          <main class="main">
            <div class="travel_1">
              <div class="image">
-             <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="Пляж">
+             <img class="image" src="images\last-post1.jpg" alt="Пляж">
                </div>
              <div class="contanier">
                <ul class="ul_subtitle">
@@ -86,7 +86,7 @@
            </div>
             <div class="travel_1">
              <div class="image">
-             <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="йога">
+             <img class="image" src="images\last-post2.jpg" alt="йога">
                </div>
              <div class="contanier">
                <ul class="ul_subtitle">
@@ -105,7 +105,7 @@
            </div>
            <div class="travel_1">
              <div class="image">
-             <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="музыкальный фестиваль">
+             <img class="image" src="images\last-post3.jpg" alt="музыкальный фестиваль">
                </div>
              <div class="contanier">
                <ul class="ul_subtitle">
@@ -124,7 +124,7 @@
            </div>
            <div class="travel_1">
              <div class="image">
-             <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="завтрак на столе">
+             <img class="image" src="images\last-post4.jpg" alt="завтрак на столе">
                </div>
              <div class="contanier">
                <ul class="ul_subtitle">
@@ -143,7 +143,7 @@
            </div>
            <div class="travel_1">
              <div class="image">
-             <img src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="Подушка для дивана">
+             <img class="image" src="images\last-post5.jpg" alt="Подушка для дивана">
                </div>
              <div class="contanier">
                <ul class="ul_subtitle">
@@ -279,15 +279,15 @@
           </picture>
           <div class="content_izdelia">
         <h2 class="header__2"> Подушки на диван </h2>
-        <p class="paragraph_izdelia">Набор из двух подушек с модными принтами. Видео о создании <a class="na_tovar" href="#">здесь.</a></p>
-        <div class="pokupka">
+         <p class="paragraph_izdelia">Набор из двух подушек с модными принтами. Видео о создании <a class="na_tovar" href="#">здесь.</a></p>
+         <div class="pokupka">
           <div class="cena">
-        <div class="old_cena">1000 ₽</div>
-        <div class="new_cena">800 ₽</div>
-      </div>
-        <button class="v_mart">в магазин 
+         <div class="old_cena">1000 ₽</div>
+         <div class="new_cena">800 ₽</div>
+         </div>
+          <button class="v_mart">в магазин 
           <span class="skrinrider">в магазин</span>
-        </button>
+          </button>
          </div>
          </div>
         </div>
@@ -310,7 +310,7 @@
         <div class="pokupka">
           <div class="cena">
         <div class="new_cena">3500 ₽</div>
-      </div>
+       </div>
         <button class="v_mart">в магазин 
           <span class="skrinrider">в магазин</span>
         </button>
@@ -337,7 +337,7 @@
           <div class="cena">
         <div class="old_cena">500 ₽</div>
         <div class="new_cena">400 ₽</div>
-      </div>
+       </div>
         <button class="v_mart">в магазин 
           <span class="skrinrider">в магазин</span>
         </button>
@@ -363,25 +363,34 @@
         <div class="Copyright">Copyright © 2009–2019 City Blog LLC</div>
       </footer>
 
+
+
+      <aside class="popup">
+      <button class="krest_popup">
+        <span class="skrinrider">закрыть</span>
+      </button>
       <div class="nash_fidbek">
+        
         <h2 class="new_block_trend_header"> наш фидбек </h2>
 
         <form class="okno">
         <label class="select-group">
-          <div class="select-label">как часто вы заходите на сайт?</div>
+          <div class="select-label">Как часто вы заходите на сайт?</div>
           <select class="select_pkd">
             <option value="pochti_kazdiy_den" selected>почти каждый день</option>
           </select>
         </label>
 
-        
-          <p>вы подрисаны на email рассылку?</p>
+      
+          <p class="vopros">Вы подрисаны на email рассылку?</p>
           <div class="form_radio">
-            <label>
-              <input type="radio" name="1"  > да
+            <label class="radio_group">
+              <input class="form_radio1" type="radio" name="1"  >
+              <span class="radio_text">да</span> 
             </label>
-            <label>
-              <input type="radio" name="1"  > нет
+            <label lass="radio_group">
+              <input class="form_radio1" type="radio" name="1"  >
+              <span class="radio_text">нет</span>
             </label>
           </div>
         
@@ -394,6 +403,7 @@
         </button>
       </form>
       </div>
+    </aside>
 
 </body>
 </html>

@@ -866,17 +866,19 @@ body {
     flex-direction: column;
     border-bottom: 2px solid #afabab;
     margin-left: 35px;
+    max-width: 58.8%;
   }
 
   .paragraph {
     margin-bottom: 23px;
+    margin-top: 14px;
   }
 
   .contanier {
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
-    max-width: 385px;
+    min-width: 385px;
   }
 
   .colum {
@@ -1032,6 +1034,7 @@ body {
 
   .nashi_izdelia {
     margin-top: 23px;
+    max-width: 100%;
   }
 
 }

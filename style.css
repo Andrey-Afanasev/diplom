@@ -547,13 +547,14 @@ body {
 
   .nashi_izdelia_img {
     display: flex;
-
-   justify-content: center;
-   margin-bottom: -30px;
+    justify-content: center;
+    margin-bottom: -30px;
   }
 
   .content_izdelia {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     border: 2px solid #b59f5b;
     padding-top: 48px ;
     padding-left: 25px;
@@ -884,9 +885,9 @@ body {
   }
 
   .nashi_izdelia_contenier {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     box-sizing: border-box;
     min-width: 700px ;
     margin-left: 35px;
@@ -897,7 +898,14 @@ body {
 
   .nashi_izdelia {
     margin-top: 23px;
+    max-width: 47.5%;
   }
+
+  .nashi_izdelia:nth-child(1n+2) {
+    margin-left: 25px;
+  }
+
+
 }
 
 @media (max-width: 360px) {

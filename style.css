@@ -202,7 +202,7 @@ body {
 
   .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     box-sizing: border-box;
     max-width: 1200px;
     margin-left: auto;
@@ -231,9 +231,19 @@ body {
   .main {
     max-width: 762px;
   }
+
+  .image_travel {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56%;
+  }
   
   .image {
-    width: 381px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    height: 100%;
   }
   
   .subtitle {
@@ -304,8 +314,9 @@ body {
 
   .colum {
     width: 270px;
-    margin-left: 90px;
+    
     font-family: OpenSans, sans-serif;
+    flex-shrink: 0;
    
   }
 
@@ -525,6 +536,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    
 
 
   }
@@ -533,7 +545,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    
+
   }
 
 
@@ -542,24 +554,38 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-   
+    
+  }
+
+  .picture_izdelia {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
   }
 
   .nashi_izdelia_img {
     display: flex;
     justify-content: center;
-    margin-bottom: -30px;
+    
+
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    height: 100%;
   }
 
   .content_izdelia {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     border: 2px solid #b59f5b;
+    margin-top: -30px;
     padding-top: 48px ;
     padding-left: 25px;
     padding-right: 25px;
-    
+    flex-grow: 1;
   
   }
 
@@ -817,7 +843,7 @@ body {
     
   }
 
-@media (min-width: 361px) and (max-width: 768px) {
+@media (min-width: 641px) and (max-width: 1200px) {
 
   .navigation {
     display: flex;
@@ -862,11 +888,20 @@ body {
     min-width: 49.9%;
   }
 
+  .content {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 768px;
+    margin-top: 64px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   .travel_1 {
     flex-direction: column;
     border-bottom: 2px solid #afabab;
-    margin-left: 35px;
-    max-width: 58.8%;
+    flex: 1 1 auto;
   }
 
   .paragraph {
@@ -878,12 +913,22 @@ body {
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
-    min-width: 385px;
+    width: 100%;
   }
 
+
   .colum {
-    margin-right: 35px;
+    min-width: 270px;
     margin-left: 35px;
+
+  
+  }
+
+  .new_block_nashi_izdelia {
+    max-width: 770px;
+    padding-left: 35px;
+    padding-right: 35px;
+
   }
 
   .nashi_izdelia_contenier {
@@ -891,26 +936,31 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    min-width: 700px ;
-    margin-left: 35px;
-    margin-right: 35px;
     margin-top: 25px;
+    
   }
 
+  
 
   .nashi_izdelia {
     margin-top: 23px;
     max-width: 47.5%;
   }
 
-  .nashi_izdelia:nth-child(1n+2) {
-    margin-left: 25px;
+  
+
+  .picture_izdelia {
+    position: relative;
+    width: 100%;
+    padding-bottom: 66%;
   }
+
+
 
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 640px) {
 
 
  
@@ -1026,15 +1076,21 @@ body {
 
   .nashi_izdelia_contenier {
     flex-wrap: wrap;
-    min-width: 330px ;
-    justify-content: start;
-    margin-left: 0px;
+    max-width: 330px ;
+    margin-left: auto;
+    margin-right: auto;
     
   }
 
   .nashi_izdelia {
     margin-top: 23px;
     max-width: 100%;
+  }
+
+  .picture_izdelia {
+    position: relative;
+    width: 100%;
+    padding-bottom: 66%;
   }
 
 }

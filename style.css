@@ -235,7 +235,7 @@ body {
   .image_travel {
     position: relative;
     width: 100%;
-    padding-bottom: 56%;
+    
   }
   
   .image {
@@ -314,7 +314,6 @@ body {
 
   .colum {
     width: 270px;
-    
     font-family: OpenSans, sans-serif;
     flex-shrink: 0;
    
@@ -354,15 +353,16 @@ body {
   
   
   .search {
+    width: 100%;
     padding: 0px;
     display: flex;
     margin-top: 52px;
-    width: 100%;  
+    
   }
   
   .field {
+    min-width: 223px;
     box-sizing: border-box;
-    width: 223px;
     padding-left: 18px;
     padding-right: 18px;
     height: 47px;
@@ -731,8 +731,7 @@ body {
     top: calc(50% - 315px);
     background: #eeeeee;
     z-index: 2;
-    display: none;
-    
+   
   }
 
  
@@ -892,7 +891,7 @@ body {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    max-width: 768px;
+    max-width: 100vw;
     margin-top: 64px;
     padding-left: 35px;
     padding-right: 35px;
@@ -902,6 +901,10 @@ body {
     flex-direction: column;
     border-bottom: 2px solid #afabab;
     flex: 1 1 auto;
+  }
+
+  .image_travel {
+    padding-bottom: 70%;
   }
 
   .paragraph {
@@ -924,8 +927,12 @@ body {
   
   }
 
+  .search {
+    max-width: 100%;
+  }
+
   .new_block_nashi_izdelia {
-    max-width: 770px;
+    max-width: 100vw;
     padding-left: 35px;
     padding-right: 35px;
 
@@ -1023,15 +1030,28 @@ body {
   }
 
 
-  .image {
-    max-width: 330px;
-  }
 
   .travel_1 {
     margin-top: 28px;
     flex-direction: column;
     border-bottom: 2px solid #afabab;
   }
+
+
+  .image_travel {
+    position: relative;
+    width: 100%;
+    padding-bottom:70%;
+  }
+  
+  .image {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+  }
+  
 
   .conrent_trend {
     font-size: 1rem;
@@ -1056,7 +1076,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 330px;
+  width: 100vw;
   margin-top: 45px;
   
   }
@@ -1076,7 +1096,7 @@ body {
 
   .nashi_izdelia_contenier {
     flex-wrap: wrap;
-    max-width: 330px ;
+    max-width: 100vw;
     margin-left: auto;
     margin-right: auto;
     
@@ -1093,4 +1113,6 @@ body {
     padding-bottom: 66%;
   }
 
-}
+  .field {
+    min-width: 100%;
+  }

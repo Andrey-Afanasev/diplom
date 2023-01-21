@@ -232,19 +232,7 @@ body {
     max-width: 762px;
   }
 
-  .image_travel {
-    position: relative;
-    width: 100%;
-    
-  }
-  
-  .image {
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    right: 0px;
-    height: 100%;
-  }
+ 
   
   .subtitle {
     text-transform: uppercase;
@@ -393,7 +381,6 @@ body {
   }
   
   .button:hover {
-    
     background-color: black;
   }
   
@@ -401,7 +388,6 @@ body {
   .email {
     display: inline-block;
     width: 100%;
-    
   }
   
   .email_text {
@@ -418,6 +404,7 @@ body {
   .email_text:hover  {
     outline-color: #ffffff;
     border: 2px solid #b59f5b;
+
   }
   .email_text:focus  {
     outline-color: #ffffff;
@@ -435,15 +422,16 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     margin-top: 18px;
+    margin-bottom: 56px;
   }
   
   .email_buttom:hover {
     background: black;
+    
   }
   
   .skrinrider {
     font-size: 0px;
-    
   }
   
   .tegi {
@@ -464,7 +452,6 @@ body {
     display: block;
     padding: 8px 9px;
     color: #000000;
-    
   }
   
   .teg_li {
@@ -491,7 +478,6 @@ body {
     padding: 10px 0px;
   }
   
-  
   .sup {
     font-family: OpenSans, sans-serif;
     color: #cabb92;
@@ -509,8 +495,6 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
-    
-      
   }
   
   .aside_header:not(:first-child) {
@@ -537,24 +521,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     
-
-
   }
 
   .nashi_izdelia_contenier {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-
   }
-
 
   .nashi_izdelia {
     max-width: 28.75%;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    
   }
 
   .picture_izdelia {
@@ -566,8 +545,6 @@ body {
   .nashi_izdelia_img {
     display: flex;
     justify-content: center;
-    
-
     position: absolute;
     width: 100%;
     left: 0px;
@@ -586,7 +563,6 @@ body {
     padding-left: 25px;
     padding-right: 25px;
     flex-grow: 1;
-  
   }
 
   .pokupka {
@@ -594,7 +570,6 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 24px;
-    
   }
 
   .new_cena {
@@ -614,8 +589,6 @@ body {
     color:#b59f5b;
   }
 
- 
-
   .v_mart {
     background-color: #b59f5b;
     border: none;
@@ -625,7 +598,6 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     padding: 15px 26px;
-    
   }
 
   .v_mart:hover {
@@ -654,7 +626,6 @@ body {
     background-color: #f4f7f6;
     padding: 30px;
     box-sizing: border-box;
-    
   }
   
   .social_icon_li {
@@ -672,7 +643,6 @@ body {
      background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
      background-repeat: no-repeat;
     width:100%;
-  
   }
   
   .social_icon2 {
@@ -707,9 +677,11 @@ body {
   .tema_1:hover {
     color: #b59f5b;
   }
+
   .tegi_1:hover {
     color: #b59f5b;
   }
+
   .new_post_content:hover {
     color: #b59f5b;
   }
@@ -717,6 +689,7 @@ body {
   .header__2:hover {
     color: #b59f5b;
   }
+
   .subtitle:hover {
     text-decoration: underline;
   }
@@ -725,24 +698,41 @@ body {
   }
 
   .popup {
-    max-width: 390px;
-    position: absolute;
-    left: calc(50% - 190px);
-    top: calc(50% - 315px);
-    background: #eeeeee;
-    z-index: 2;
-   
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    display: none;
   }
 
- 
+  .popup:before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index:-1;
+    }
 
-
+  .popup_contanier {
+    max-width: 390px;
+    position: absolute;
+    background: #eeeeee;
+    z-index: 2;
+    left: calc(50% - 190px);
+    top: 220px;
+  }
 
   .nash_fidbek {
     box-sizing: border-box;
     flex-direction: column;
-    padding: 54px 30px;
-    width: 390px;
+    padding: 0px 30px 35px;
+    width: 410px;
     font-family: OpenSans, sans-serif;
     font-size: 13px;
     border: 2px solid #f4f7f6;
@@ -769,7 +759,7 @@ body {
   }
 
    .select-label {
-    margin-top: 28px;
+    margin-top: 25px;
     margin-bottom: 9px;
    }
 
@@ -789,7 +779,6 @@ body {
     background-position: right 11px center;
     border: none;
     padding-left: 11px;
- 
   }
 
   .form_radio1 {
@@ -801,17 +790,17 @@ body {
     margin-right: 32px;
   }
 
-  .radio_text:before {
-    width: 25px;
-    height: 25px;
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    background: url("svg/form-empty-circle.svg");
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center center;
-    margin-right: 8px;
+ .radio_text:before {
+  width: 25px;
+  height: 25px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url("svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center center;
+  margin-right: 8px;
    
   }
 
@@ -824,7 +813,6 @@ body {
     background: url("svg/form-circle.svg");
     background-size: 25px;
     background-repeat: no-repeat;
-    
   }
 
   .text1 {
@@ -832,14 +820,11 @@ body {
     margin-bottom: 10px;
   }
 
-
-
   .text2 {
     width: 100%;
     min-height: 130px;
     background-color: #f4f7f6;
     appearance: none;
-    
   }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -904,7 +889,16 @@ body {
   }
 
   .image_travel {
+    position: relative;
+    width: 100%;
     padding-bottom: 70%;
+  }
+  
+  .image {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 100%;
   }
 
   .paragraph {
@@ -923,12 +917,18 @@ body {
   .colum {
     min-width: 270px;
     margin-left: 35px;
-
-  
   }
 
   .search {
     max-width: 100%;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  .search_but {
+    width: 100%;
   }
 
   .new_block_nashi_izdelia {
@@ -944,17 +944,13 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
     margin-top: 25px;
-    
   }
-
-  
 
   .nashi_izdelia {
     margin-top: 23px;
     max-width: 47.5%;
   }
 
-  
 
   .picture_izdelia {
     position: relative;
@@ -962,10 +958,9 @@ body {
     padding-bottom: 66%;
   }
 
-
-
-
 }
+
+
 
 @media (max-width: 640px) {
 
@@ -1114,5 +1109,14 @@ body {
   }
 
   .field {
-    min-width: 100%;
+    width: 100%;
   }
+
+  .search_but {
+    width: 100%;
+  }
+
+}
+
+
+    
